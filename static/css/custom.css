@@ -1,0 +1,214 @@
+/* your styles go here */
+    .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 35px;
+  line-height: 40px;
+  font-family: 'Muli';
+  color: #ecf0f1;
+  height: 160px;
+  overflow: hidden;
+}
+
+.visible {
+  font-weight: 600;
+  overflow: hidden;
+  height: 40px;
+  padding: 0 40px;
+}
+.visible:before {
+  content: '[';
+  left: 0;
+  line-height: 40px;
+}
+.visible:after {
+  content: ']';
+  position: absolute;
+  right: 0;
+  line-height: 40px;
+}
+.visible:after, .visible:before {
+  position: absolute;
+  top: 0;
+  color: #ff8200;
+  font-size: 42px;
+  -webkit-animation: 2s linear 0s normal none infinite opacity;
+          animation: 2s linear 0s normal none infinite opacity;
+}
+
+
+.roll_ul {
+  margin-top: 0;
+  padding-left: 10px;
+  text-align: left;
+  list-style: none;
+  -webkit-animation: 12s linear 0s normal none infinite change;
+          animation: 12s linear 0s normal none infinite change;
+}
+
+.roll_ul .roll_li {
+  line-height: 40px;
+  margin: 0;
+}
+
+@-webkit-keyframes opacity {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes opacity {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes change {
+  0%, 12%, 100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  17%,29% {
+    -webkit-transform: translateY(-25%);
+            transform: translateY(-25%);
+  }
+  34%,46% {
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  51%,63% {
+    -webkit-transform: translateY(-75%);
+            transform: translateY(-75%);
+  }
+  68%,80% {
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  85%,97% {
+    -webkit-transform: translateY(-25%);
+            transform: translateY(-25%);
+  }
+}
+@keyframes change {
+  0%, 12%, 100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  17%,29% {
+    -webkit-transform: translateY(-25%);
+            transform: translateY(-25%);
+  }
+  34%,46% {
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  51%,63% {
+    -webkit-transform: translateY(-75%);
+            transform: translateY(-75%);
+  }
+  68%,80% {
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  85%,97% {
+    -webkit-transform: translateY(-25%);
+            transform: translateY(-25%);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .word {
+        height: 100%;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+    .text {
+        font-weight: 200;
+        font-size: 50px;
+        color: #fafafa;
+    }
+    .font{
+        font-weight: normal;
+        font-size: 16px;
+        z-index: 4;
+        letter-spacing: 1px;
+        line-height: 33px;
+        position: absolute;
+        text-align :left;
+        background-color: #333333;
+    }
+
+    .width100{
+        position: absolute;
+        left: 8%;
+        right: 8%;
+        width: 84%;
+        max-width: 84%;
+    }
+    .position_relative{
+        position: relative;
+        width: 100%;
+
+    }
+    .position_right{position: absolute;right:8%}
+    .position_left{position: absolute;left:8%}
+
+    .cover{
+        background-color: #333333;
+        width: 100%;
+        z-index: 3;
+        height: 80px;
+        position: absolute;
+    }
+
+.box{
+    margin:100px auto;
+    /*边框阴影*/
+    /*效果1*/
+    box-shadow: inset 5px 5px 20px #0a0a0a;
+    /*效果2*/
+    box-shadow: inset 5px 5px 20px rgba(255, 192, 203, 0),5px 5px 20px #000;
+}
+.dud {
+    color: #757575;
+}
+
+    .tableauPlaceholder{
+        position: absolute;
+        z-index: 2;
+    }
+
+    img{width: 500px}
+    .img9{height: 270px}
+    .img3{height: 130px}
+    .img2{height: 85px}
+    .img4{height: 160px}
+    .img5{height: 180px}
+    .img6{height: 200px}
+    .img7{height: 240px}
+
+    .line{
+        position:absolute;width:100%;height: 5px;background-color: rgba(6, 39, 79, 0.47);z-index: 6;
+    }

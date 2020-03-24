@@ -1,0 +1,269 @@
+[data-animate] {
+  visibility: hidden;
+}
+
+.animated {
+  visibility: visible;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+}
+
+body {
+  color: #555;
+}
+
+p {
+  color: #f1f1f1;
+}
+
+section {
+  padding: 60px 0;
+  position: relative;
+
+}
+
+.text-shadow {
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+.text-400 {
+  font-weight: 400 !important;
+}
+
+.title {
+  display: inline-block;
+  font-size: 2.9rem;
+  font-weight: 100;
+  padding: 10px 0;
+  margin-bottom: 44px;
+  text-align: center;
+  /*border-bottom: solid 1px #fdfdfd;*/
+  /*border-top: solid 1px #fdfdfd;*/
+  text-transform: uppercase;
+  /*letter-spacing: 0.1em;*/
+  line-height: 1.2;
+  color: #f7faf1;
+
+  margin-top: 20px;
+  letter-spacing: 0;
+}
+
+
+
+
+/*
+*
+* =====================
+* NAVBAR
+* =====================
+*
+*/
+nav.navbar {
+  padding-top: 0;
+  padding-bottom: 0;
+  background: #fff;
+  border-bottom: 1px solid #cc444f;
+}
+
+@media (max-width: 991.98px) {
+  nav.navbar {
+    padding-top: 11px;
+    padding-bottom: 11px;
+  }
+}
+
+nav.navbar .navbar-brand {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  font-family: "Roboto Slab", serif;
+}
+
+nav.navbar a.nav-link {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin: 0.5px;
+  color: #777;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  border-top: 4px solid transparent;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  font-size: 0.875rem;
+}
+
+@media (max-width: 991.98px) {
+  nav.navbar a.nav-link {
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    border: none;
+  }
+}
+
+nav.navbar a.nav-link.active, nav.navbar a.nav-link:hover {
+  color: #333;
+  border-top-color: #ff3f3f;
+}
+
+@media (max-width: 1199.98px) {
+  nav.navbar a.nav-link.active, nav.navbar a.nav-link:hover {
+    color: #ff3f3f;
+  }
+}
+
+/*
+*
+* =====================
+* INTRO
+* =====================
+*
+*/
+.intro-section {
+  padding-top: 150px;
+  color: #ffffff;
+}
+
+.intro-section .logo, .intro-section p {
+  margin-bottom: 120px;
+}
+
+@media (min-width: 992px) {
+  .intro-section {
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+
+/* =========================================
+   THEMING OF BOOTSTRAP COMPONENTS
+   ========================================= */
+/*
+ * 1. NAVBAR
+ */
+.navbar {
+  padding: 0.5rem 1rem;
+}
+
+.navbar-brand {
+  display: inline-block;
+  padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem;
+  margin-right: 1rem;
+  font-size: 1.25rem;
+}
+
+.navbar-toggler {
+  padding: 0.25rem 0.75rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  border: 1px solid transparent;
+  border-radius: 0rem;
+}
+
+
+/*
+ * 3. TYPE
+ */
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+
+}
+
+a {
+  color: #ff3f3f;
+  text-decoration: none;
+}
+
+a:hover, a:focus {
+  color: #f20000;
+  text-decoration: underline;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  margin-bottom: 0.5rem;
+  font-family: "Roboto Slab", serif;
+  font-weight: 700;
+  line-height: 1.2;
+  color: inherit;
+}
+
+h1,
+.h1 {
+  font-size: 3.6rem;
+}
+
+h2,
+.h2 {
+  font-size: 2.15rem;
+}
+
+
+/*
+* 8. NAV
+*/
+.nav-link {
+  padding: 0.5rem 1rem;
+}
+
+.nav-link.disabled {
+  color: #6c757d;
+}
+
+.nav-tabs .nav-item {
+  margin-bottom: -1px;
+}
+
+.nav-tabs .nav-link {
+  border: 1px solid transparent;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+}
+
+.nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
+  border-color: #e9ecef #e9ecef #dee2e6;
+}
+
+.nav-tabs .nav-link.disabled {
+  color: #6c757d;
+}
+
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+  color: #495057;
+  background-color: #cc444f;
+}
+
+.nav-tabs .dropdown-menu {
+  margin-top: -1px;
+}
+
+.nav-pills .nav-link {
+  border-radius: 0.25rem;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #ff2432;
+  background-color: #ff3f3f;
+}
